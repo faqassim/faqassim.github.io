@@ -80,7 +80,7 @@
 							Design</Strong>.</p>
 				</div>
 				<div class="image filtered tinted" data-position="top right">
-					<img src="images/gallery/thumbs/01.jpg"/>
+					<img src="images/gallery/thumbs/01.jpg" />
 				</div>
 			</section>
 
@@ -94,24 +94,24 @@
 						I worked on group projects employing <strong>crucial</strong> data structures such as;
 						<strong>Hashtables</strong>, <strong>Red Black Trees</strong> and <strong>Djikstra's
 							algorithm</strong>.
-							I also worked on a few projects <i>outside</i> of programming for an <strong>Art</strong>
-							class I've taken. 
+						I also worked on a few projects <i>outside</i> of programming for an <strong>Art</strong>
+						class I've taken.
 					</p>
 				</div>
 				<div class="gallery">
 					<div class="group span-3">
-						<a href="s" class="image filtered span-3" data-position="bottom"><img
-								src="sighandle.png" alt="" /></a>
-						<a href="Airport.png" class="image filtered span-1-5"
-							data-position="center"><img src="Airport.png" alt="" /></a>
-						<a href="Malloc.png" class="image filtered span-1-5"
-							data-position="bottom"><img src="Malloc.png" alt="" /></a>
+						<a href="s" class="image filtered span-3" data-position="bottom"><img src="sighandle.png"
+								alt="" /></a>
+						<a href="Airport.png" class="image filtered span-1-5" data-position="center"><img
+								src="Airport.png" alt="" /></a>
+						<a href="Malloc.png" class="image filtered span-1-5" data-position="bottom"><img
+								src="Malloc.png" alt="" /></a>
 					</div>
-					<a href="cache.png" class="image filtered span-2-5" data-position="top"><img
-							src="cache.png" alt="" /></a>
+					<a href="cache.png" class="image filtered span-2-5" data-position="top"><img src="cache.png"
+							alt="" /></a>
 					<div class="group span-4-5">
-						<a href="sendsig.png" class="image filtered span-3" data-position="top"><img
-								src="sendsig.png" alt="" /></a>
+						<a href="sendsig.png" class="image filtered span-3" data-position="top"><img src="sendsig.png"
+								alt="" /></a>
 						<a href="AlkassemFarris_ThrowbackCollage1.jpg" class="image filtered span-1-5"
 							data-position="center"><img src="AlkassemFarris_ThrowbackCollage1.jpg" alt="" /></a>
 						<a href="AlkassemFarris_RealityUnreality.png" class="image filtered span-1-5"
@@ -132,7 +132,8 @@
 				</div>
 				<div class="inner columns divided">
 					<div class="span-3-25">
-						<form method="post" action="https://docs.google.com/forms/d/1Pb-8eRS15mGw54h-1_QysRDWWN8cVJxIlDkX_CJxlsw/prefill">
+						<form method="post"
+							action="https://docs.google.com/forms/d/1Pb-8eRS15mGw54h-1_QysRDWWN8cVJxIlDkX_CJxlsw/prefill">
 							<div class="fields">
 								<div class="field half">
 									<label for="name">Name</label>
@@ -151,6 +152,8 @@
 								<li><input type="submit" value="Send Message" class="button primary" /></li>
 							</ul>
 						</form>
+						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+							onload="if(submitted) {}"></iframe>
 					</div>
 					<div class="span-1-5">
 						<ul class="contact-icons color1">
@@ -164,11 +167,19 @@
 			</section>
 
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/main.js"></script>
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script type="text/javascript">var submitted = false;</script>
+			<script type="text/javascript">
+				$('#gform').on('submit', function (e) {
+					$('#gform *').fadeOut(2000);
+					$('#gform').prepend('Your submission has been processed...');
+				});
+			</script>
 
 </body>
 
